@@ -1,10 +1,15 @@
 import pdfkit
+import os
 
 path_to_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
 config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 
 input_html = 'index.html'
 output_pdf = 'Koorosh_Komeili_Zadeh_CV.pdf'
+
+if os.path.exists(output_pdf):
+    os.remove(output_pdf)
+    print(f'Existing PDF removed: {output_pdf}')
 
 options = {
     'page-size': 'A4',
