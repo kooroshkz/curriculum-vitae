@@ -7,6 +7,11 @@ body {
     color: #333;
 }
 
+.section {
+    page-break-inside: avoid;
+}
+
+
 .container {
     max-width: 900px;
     margin: 0 auto;
