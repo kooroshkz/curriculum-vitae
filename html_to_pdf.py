@@ -7,9 +7,12 @@ config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 input_html = 'index.html'
 output_pdf = 'Koorosh_Komeili_Zadeh_CV.pdf'
 
-if os.path.exists(output_pdf):
-    os.remove(output_pdf)
-    print(f'Existing PDF removed: {output_pdf}')
+try:
+    if os.path.exists(output_pdf):
+        os.remove(output_pdf)
+        print(f'Existing PDF removed')
+except Exception as e:
+    print(f'Error removing existing PDF: {e}')
 
 options = {
     'page-size': 'A4',
@@ -25,4 +28,4 @@ options = {
 
 pdfkit.from_file(input_html, output_pdf, configuration=config, options=options)
 
-print(f'PDF generated: {output_pdf}')
+print(f'PDF generated')
