@@ -154,3 +154,37 @@ h2::first-letter {
     list-style: none;
     padding: 0;
 }
+
+/* Table styles for skills */
+.skills-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.skills-table th, .skills-table td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.skills-table th {
+    font-weight: bold;
+}
+
+/* Make the table transparent with no borders or background */
+.skills-table, .skills-table th, .skills-table td {
+    border: none;
+    background: transparent;
+}
+
+/* Make the second column (Programming Languages) stack vertically */
+.skills-table td:nth-child(2) {
+    display: block;
+    margin-top: 8px;
+}
+
+/* Prevent text from wrapping */
+.skills-table td {
+    white-space: nowrap;
+}
