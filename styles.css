@@ -155,36 +155,76 @@ h2::first-letter {
     padding: 0;
 }
 
-/* Table styles for skills */
+/* Default Styles */
 .skills-table {
     width: 100%;
     margin-bottom: 20px;
     border-collapse: collapse;
-    table-layout: fixed;
+    table-layout: fixed; /* Fixed layout for consistent column widths */
 }
 
 .skills-table th, .skills-table td {
     padding: 8px 12px;
     text-align: left;
+    white-space: pre; /* Preserve whitespace */
 }
 
 .skills-table th {
     font-weight: bold;
 }
 
-/* Make the table transparent with no borders or background */
+/* Transparent, borderless tables */
 .skills-table, .skills-table th, .skills-table td {
     border: none;
     background: transparent;
 }
 
-/* Make the second column (Programming Languages) stack vertically */
+/* Second column stacks vertically */
 .skills-table td:nth-child(2) {
     display: block;
     margin-top: 8px;
 }
 
-/* Prevent text from wrapping */
+/* Prevent text from wrapping by default */
 .skills-table td {
     white-space: nowrap;
+    word-wrap: break-word;
+}
+
+/* Responsive Styles for Small Screens */
+@media screen and (max-width: 768px) {
+    .skills-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center;
+        min-height: 100vh; /* Full viewport height */
+    }
+
+    .skills-table {
+        width: 100%; /* Full width of container */
+        max-width: 800px; /* Restrict to a maximum width */
+        table-layout: fixed; /* Maintain consistent column widths */
+        word-wrap: break-word; /* Enable word wrapping */
+        overflow-wrap: anywhere; /* Handle overflow gracefully */
+    }
+
+    .skills-table th, .skills-table td {
+        padding: 8px 12px;
+        text-align: left;
+        vertical-align: top; /* Align text to top */
+        font-size: 14px; /* Reduce font size for smaller screens */
+        white-space: normal; /* Allow text wrapping */
+    }
+
+    /* Set equal column widths for consistency */
+    .skills-table th:nth-child(1),
+    .skills-table td:nth-child(1) {
+        width: 50%; /* Left column */
+    }
+
+    .skills-table th:nth-child(2),
+    .skills-table td:nth-child(2) {
+        width: 50%; /* Right column */
+    }
 }
