@@ -155,76 +155,70 @@ h2::first-letter {
     padding: 0;
 }
 
-/* Default Styles */
 .skills-table {
     width: 100%;
     margin-bottom: 20px;
     border-collapse: collapse;
-    table-layout: fixed; /* Fixed layout for consistent column widths */
+    table-layout: fixed;
 }
 
 .skills-table th, .skills-table td {
     padding: 8px 12px;
     text-align: left;
-    white-space: pre; /* Preserve whitespace */
+    white-space: pre;
 }
 
 .skills-table th {
     font-weight: bold;
 }
 
-/* Transparent, borderless tables */
 .skills-table, .skills-table th, .skills-table td {
     border: none;
     background: transparent;
 }
 
-/* Second column stacks vertically */
 .skills-table td:nth-child(2) {
     display: block;
     margin-top: 8px;
 }
 
-/* Prevent text from wrapping by default */
 .skills-table td {
     white-space: nowrap;
     word-wrap: break-word;
 }
 
-/* Responsive Styles for Small Screens */
 @media screen and (max-width: 768px) {
     .skills-section {
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Center vertically */
+        justify-content: center;
         align-items: center;
-        min-height: 100vh; /* Full viewport height */
+        min-height: 100vh;
     }
 
     .skills-table {
-        width: 100%; /* Full width of container */
-        max-width: 800px; /* Restrict to a maximum width */
-        table-layout: fixed; /* Maintain consistent column widths */
-        word-wrap: break-word; /* Enable word wrapping */
-        overflow-wrap: anywhere; /* Handle overflow gracefully */
+        width: 100%;
+        max-width: 800px;
+        table-layout: fixed;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
     }
 
     .skills-table th, .skills-table td {
         padding: 8px 12px;
         text-align: left;
-        vertical-align: top; /* Align text to top */
-        font-size: 14px; /* Reduce font size for smaller screens */
-        white-space: normal; /* Allow text wrapping */
+        vertical-align: top;
+        font-size: 14px;
+        white-space: normal;
     }
 
-    /* Set equal column widths for consistency */
     .skills-table th:nth-child(1),
     .skills-table td:nth-child(1) {
-        width: 50%; /* Left column */
+        width: 50%;
     }
 
     .skills-table th:nth-child(2),
     .skills-table td:nth-child(2) {
-        width: 50%; /* Right column */
+        width: 50%;
     }
 }
