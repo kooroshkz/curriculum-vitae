@@ -2,6 +2,8 @@ import pdfkit
 import os
 
 path_to_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
+# path_to_wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
+
 config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 
 input_html = 'index.html'

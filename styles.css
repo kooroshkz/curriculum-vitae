@@ -157,35 +157,33 @@ h2::first-letter {
 
 .skills-table {
     width: 100%;
-    /* margin-bottom: 20px; */
     border-collapse: collapse;
-    table-layout: fixed;
-}
-
-.skills-table th, .skills-table td {
-    padding: 3px 12px;
-    text-align: left;
-    white-space: pre;
+    margin-top: 20px;
 }
 
 .skills-table th {
-    font-weight: bold;
-}
-
-.skills-table, .skills-table th, .skills-table td {
-    border: none;
-    background: transparent;
-}
-
-.skills-table td:nth-child(2) {
-    display: block;
-    margin-top: 8px;
+    text-align: left;
+    font-size: 1.2em;
+    border-bottom: 1px solid #353436;
+    padding-bottom: 8px;
+    color: #353436;
 }
 
 .skills-table td {
-    white-space: nowrap;
-    word-wrap: break-word;
+    padding: 10px 0;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
 }
+
+.skills-table td:first-child {
+    width: 20%;
+    font-weight: bold;
+}
+
+.skills-table td:last-child {
+    width: 80%;
+}
+
 
 @media screen and (max-width: 768px) {
     .skills-section {
