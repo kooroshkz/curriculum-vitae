@@ -157,13 +157,13 @@ h2::first-letter {
 
 .skills-table {
     width: 100%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-collapse: collapse;
     table-layout: fixed;
 }
 
 .skills-table th, .skills-table td {
-    padding: 8px 12px;
+    padding: 3px 12px;
     text-align: left;
     white-space: pre;
 }
