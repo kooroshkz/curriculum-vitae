@@ -1,8 +1,8 @@
 import pdfkit
 import os
 
-path_to_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
-# path_to_wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
+# path_to_wkhtmltopdf = '/usr/bin/wkhtmltopdf'
+path_to_wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
 
 config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 
@@ -18,10 +18,10 @@ except Exception as e:
 
 options = {
     'page-size': 'A4',
-    'margin-top': '10mm',
-    'margin-right': '10mm',
-    'margin-bottom': '10mm',
-    'margin-left': '10mm',
+    'margin-top': '5mm',
+    'margin-right': '5mm',
+    'margin-bottom': '5mm',
+    'margin-left': '5mm',
     'encoding': 'UTF-8',
     'enable-local-file-access': None,
     'no-outline': None,
