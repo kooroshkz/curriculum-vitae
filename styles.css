@@ -32,13 +32,16 @@ body {
 h1 {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 300;
-    font-size: calc(2.5vw + 1.5em);
+    font-size: clamp(1.5em, 6vw, 3.5em);
     color: #706665;
     text-align: center;
     margin-bottom: -0.35em;
-    overflow: hidden;
     white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .name-first {
