@@ -1,6 +1,16 @@
 # curriculum-vitae
 HTML-based personal curriculum vitae
 
+
+#### Run Project
+```bash
+if [ ! -d "node_modules" ]; then
+    npm install
+fi
+
+node html_to_pdf.js
+```
+
 ### CV Improvement Notes:  
 
 **Value of Teaching Experiences for Career and Companies:**  

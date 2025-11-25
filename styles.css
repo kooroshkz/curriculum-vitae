@@ -67,7 +67,7 @@ body {
     }
     
     ul {
-        margin: 0.5em 0;
+        margin: 16 0;
         padding-left: 1.5em;
     }
     
@@ -101,7 +101,7 @@ body {
     
     .contact-info .student-info,
     .contact-info .location-info {
-        margin: 0.3em 0;
+        margin: 16px 0;
     }
     
     .section p strong {
@@ -199,9 +199,15 @@ h2::first-letter {
     margin-left: 8px;
 }
 
+.email-icon, .linkedin-icon {
+    position: relative;
+    top: -2px;
+}
+
 .contact-details a {
     color: #353436;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .contact-details a:hover {
@@ -246,7 +252,7 @@ h2::first-letter {
 .skills-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .skills-table th {
