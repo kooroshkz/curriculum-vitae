@@ -1,15 +1,7 @@
 .venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
 *.so
 .coverage
-.pytest_cache/
 *.egg-info/
 dist/
 build/
-*.pdf
 node_modules/
-package-lock.json
