@@ -69,6 +69,7 @@ body {
     ul {
         margin: 16 0;
         padding-left: 1.5em;
+        list-style-type: disc;
     }
     
     ul li {
