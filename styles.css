@@ -6,88 +6,6 @@ body {
     color: #333;
 }
 
-.section {
-    page-break-inside: avoid;
-}
-
-@media screen {
-    body {
-        background-color: #f4f4f4;
-    }
-}
-
-@media print {
-    body {
-        background-color: #fff;
-        font-size: 12px;
-        line-height: 1.4;
-    }
-    
-    .container {
-        max-width: none;
-        padding: 10px;
-        margin: 0;
-    }
-    
-    h1 {
-        font-size: 2.2em;
-        margin-bottom: 0.2em;
-    }
-    
-    h2 {
-        font-size: 1.3em;
-        margin: 0.8em 0 0.3em 0;
-    }
-    
-    .section {
-        margin-bottom: 1.2em;
-        page-break-inside: avoid;
-    }
-    
-    .contact-details {
-        gap: 10px;
-        margin-bottom: 15px;
-        flex-wrap: nowrap;
-    }
-    
-    .contact-item {
-        margin-bottom: 5px;
-    }
-    
-    .contact-details a {
-        font-size: 12px;
-    }
-    
-    .icon {
-        font-size: 13px;
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-    
-    .skills-table {
-        margin-top: 10px;
-    }
-    
-    .skills-table th, .skills-table td {
-        padding: 6px 0;
-        font-size: 11px;
-    }
-    
-    ul {
-        margin: 16 0;
-        padding-left: 1.5em;
-        list-style-type: disc;
-    }
-    
-    ul li {
-        margin-bottom: 0.3em;
-    }
-    
-    p {
-        margin: 0.5em 0;
-    }
-}
-
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -95,31 +13,9 @@ body {
     padding: 20px;
 }
 
-/* PDF-specific optimizations */
-@media print, (max-width: 794px) {
-    .container {
-        max-width: 100%;
-        padding: 15px;
-    }
-    
-    h1 {
-        font-size: 2em;
-        margin-bottom: 0.1em;
-    }
-    
-    .contact-info .student-info,
-    .contact-info .location-info {
-        margin: 16px 0;
-    }
-    
-    .section p strong {
-        display: inline-block;
-        margin-top: 0.5em;
-    }
-    
-    .section div[style*="padding-left"] {
-        padding-left: 1.5em !important;
-    }
+.section {
+    page-break-inside: avoid;
+    margin-bottom: 1.5em;
 }
 
 h1 {
@@ -209,7 +105,7 @@ h2::first-letter {
 
 .email-icon, .linkedin-icon {
     position: relative;
-    top: -2px;
+    top: 0px;
 }
 
 .contact-details a {
@@ -286,6 +182,104 @@ h2::first-letter {
     width: 75%;
 }
 
+@media screen {
+    body {
+        background-color: #f4f4f4;
+    }
+}
+
+@media print, (max-width: 794px) {
+    body {
+        background-color: #fff;
+        font-size: 12px;
+        line-height: 1.4;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 1.9em;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0.1em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+        margin: 0.8em 0 0.3em 0;
+    }
+    
+    .section {
+        margin-bottom: 0.8em;
+        page-break-inside: avoid;
+    }
+    
+    .section p strong {
+        display: inline-block;
+        margin-top: 0.3em;
+    }
+    
+    .section div[style*="padding-left"] {
+        padding-left: 1.5em !important;
+    }
+    
+    .contact-details {
+        gap: 10px;
+        margin-bottom: 10px;
+        flex-wrap: nowrap;
+    }
+    
+    .student-info {
+        margin: 0.05em 0 !important;
+    }
+    
+    .location-info {
+        margin: 0.05em 0 !important;
+    }
+    
+    .contact-item {
+        margin-bottom: 3px;
+    }
+    
+    .contact-details a {
+        font-size: 12px;
+    }
+    
+    .icon {
+        font-size: 13px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+    .skills-table {
+        margin-top: 8px;
+    }
+    
+    .skills-table th, .skills-table td {
+        padding: 5px 0;
+        font-size: 11px;
+    }
+    
+    ul {
+        margin: 10px 0;
+        padding-left: 1.5em;
+        list-style-type: disc;
+    }
+    
+    ul li {
+        margin-bottom: 0.2em;
+    }
+    
+    p {
+        margin: 0.3em 0;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .skills-section {

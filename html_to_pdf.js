@@ -47,7 +47,7 @@ async function convertHtmlToPdf() {
         printBackground: true,
         preferCSSPageSize: false,
         displayHeaderFooter: false,
-        scale: 1.0
+        scale: 0.95
     });
 
     await browser.close();
