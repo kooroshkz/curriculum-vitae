@@ -1,9 +1,10 @@
-.venv/
+node_modules/
+package-lock.json
 *.so
 .coverage
 *.egg-info/
 dist/
 build/
-node_modules/
+.DS_Store
+
 Archived/
-.DS_store

@@ -2,12 +2,14 @@
   "name": "cv-pdf-generator",
   "version": "1.0.0",
   "description": "HTML to PDF converter for CV",
-  "main": "html_to_pdf.js",
+  "main": "cv-build.js",
   "scripts": {
-    "generate": "node html_to_pdf.js"
+    "start": "node cv-build.js",
+    "generate": "node cv-build.js"
   },
   "dependencies": {
-    "puppeteer": "^23.11.1"
+    "puppeteer": "^23.11.1",
+    "js-yaml": "^4.1.0"
   },
   "author": "Koorosh Komeili Zadeh",
   "license": "MIT"

@@ -1,0 +1,88 @@
+personal:
+  firstName: Koorosh
+  lastName: Komeili Zadeh
+  title: Graduate Software Engineer – Data, Backend & Cloud Systems
+  location: Randstad Area, the Netherlands
+
+contact:
+  phone: (+31) 6 8782 4064
+  phoneLink: tel:+31687824064
+  linkedin: kooroshkz
+  linkedinLink: https://www.linkedin.com/in/kooroshkz/
+  email: kkomeilizadeh@gmail.com
+  github: kooroshkz
+  githubLink: https://github.com/kooroshkz/
+  website: kooroshkz.com
+  websiteLink: https://kooroshkz.com/
+
+experience:
+  - title: Software Engineer Intern
+    role: Data Platforms
+    company: TomTom
+    period: Sep 2025 – Present
+    description: Built scalable, cloud-native backend systems to enable analytics and decision-making across TomTom Map Advanced Analytics Platform.
+    achievements:
+      - Designed **ETL pipelines** for **TB-scale** geospatial data using **Scala**, **Python**, and **Apache Spark** on **Azure Databricks**
+      - Automated **deployment**, **orchestration**, and **data governance** using **Databricks DABs**, **Unity Catalog**, and **Azure Data Lake**
+      - Implemented **monitoring** and **observability** solutions for **metrics, logs, costs**, and **performance** visualization on **Grafana**
+      - Contributed to **data mesh architecture**, improving **system scalability** by **4x** and **data accessibility** across multiple teams
+
+  - title: Software Engineer Intern
+    role: Backend & Cloud Systems
+    company: Diplora
+    period: Jun 2024 – Feb 2025
+    description: Developed backend systems on **AWS** for processing **high-frequency ECG time-series data** in production.
+    achievements:
+      - Built a **real-time data ingestion pipeline** using **Apache Kafka** to stream and buffer ECG signals reliably
+      - Developed data processing services using **Python** and **Java** with **AWS Lambda**, and **S3**
+      - Migrated legacy workflows to a **cloud-native AWS architecture**, improving reliability and scalability
+      - Designed and implemented secure **GraphQL** and **REST APIs** with a real-time **monitoring dashboard**
+      - Collaborated with stakeholders to analyze requirements, **troubleshoot issues**, and implement reliable **data-driven** solutions
+
+  - title: Teaching Assistant
+    role: null
+    company: Leiden Institute of Advanced Computer Science
+    period: Feb 2024 – Present
+    description: Delivered workshops and troubleshooting sessions, explaining technical concepts and course delivery for **Data Science**, **Software Development**, **Foundations of Computer Science** and **Advanced Programming** courses.
+    achievements: []
+
+education:
+  - institution: Leiden University
+    degree: BSc in Data Science and Artificial Intelligence
+    period: "Sep 2023 – Expected Graduation: Jul 2026"
+    coursework: "**Relevant Coursework**: System Design, Object-Oriented Programming, Algorithms & Data Structures, Software Security"
+    thesis: "**Thesis**: Adaptive **Data Profiling** using **AutoML model deployment** for **data quality monitoring** and **ETL pipeline optimization**"
+
+projects:
+  - title: AcciBot - Vehicle Accident Detection Bot
+    description: Developed a **cloud-based backend system** for vehicle crash detection using **Arduino** and **Microsoft Azure IoT Hub**. Processed real-time sensor data using **Azure Stream Analytics** and **Azure Functions** for serverless accident and anomaly detection.
+    
+  - title: Weather Forecast Monitoring System
+    description: Developed an **end-to-end data pipeline** using **Python** and **Apache Airflow** to ingest weather forecasts and live observations, storing **time-series data** in **PostgreSQL** and **Snowflake** to measure forecast accuracy over time.
+    
+  - title: Explored Academic Mathematics Performance in Tehran Polytechnic University
+    description: A **data-driven** case study utilized **Data Analysis** and **Machine Learning** to uncover trends, detect fraud, and provide insights for academic improvements.
+    link: https://github.com/kooroshkz/math_grades_analysis
+    linkText: View on GitHub
+
+skills:
+  - category: Programming Languages
+    items: SQL, Python, Java, Scala, JavaScript, Bash/Shell scripting
+    
+  - category: Software & Backend
+    items: REST APIs, GraphQL, Django, Integration and Unit Testing, Distributed Systems
+    
+  - category: Databases & Cloud
+    items: PostgreSQL, MongoDB, DynamoDB, InfluxDB, DuckDB, AWS, Azure, GCP
+    
+  - category: Data & Streaming
+    items: Spark, Airflow, Kafka, dbt, MLOps, Databricks, Snowflake, BigQuery
+    
+  - category: DevOps & Tooling
+    items: Linux (Ubuntu, CentOS), Git, Docker, Kubernetes, GitHub Actions, CI/CD
+
+certifications:
+  - Machine Learning Specialization – Stanford Online (Aug 2023)
+  - Neural Networks and Deep Learning – DeepLearning.AI (May 2023)
+  - CS50x Introduction to Computer Science – Harvard University (Dec 2022)
+  - Agile project management with Scrum – Amirkabir University of Technology (Dec 2022)
