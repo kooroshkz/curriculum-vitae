@@ -1,7 +1,7 @@
 personal:
   firstName: Koorosh
   lastName: Komeili Zadeh
-  title: Software Engineer – Data, Backend and Cloud Systems
+  title: Junior Software Engineer - Data Platforms & Backend Systems
   location: Randstad Area, the Netherlands
 
 contact:
@@ -17,71 +17,66 @@ contact:
 
 experience:
   - title: Software Engineer
-    role: Analytical Data Platforms
+    role: Data Platforms
     company: TomTom
-    period: Sep 2025 – Present
-    description: Worked on scalable cloud-native backend data systems supporting internal analytics platforms for TomTom’s Map Advanced Analytics Unit.
+    period: Sep 2025 – Present  
+    description: Working on scalable backend systems and data platforms, contributing to product-facing tools with focus on performance, reliability, and large-scale data workflows.
     achievements:
-      - Maintained and optimized **ETL pipelines** for large geospatial data using **Scala**, **Python**, and **Apache Spark** on **Azure Databricks**
-      - Automated **deployment**, **orchestration**, and **data governance** using **Databricks DABs**, **Unity Catalog**, and **Azure Data Lake**
-      - Implemented **monitoring** and **observability** solutions for **metrics, logs, costs**, and **performance** visualization on **Grafana**
-      - Contributed to **data mesh architecture**, improving **system scalability** and **data accessibility** across multiple teams
+      - Maintained and optimized ETL pipelines and backend platforming tools using Scala, Python, and Apache Spark on Azure Databricks
+      - Automated deployment, orchestration, and data governance using Databricks DABs, Unity Catalog, and Azure Data Lake
+      - Implemented monitoring and observability solutions for metrics, logs, costs, and performance visualization on Grafana
+      - Collaborated with cross-functional teams to design and improve cloud-based, distributed data workflows
 
   - title: Software Engineer Intern
-    role: Data & Backend Systems
+    role: Backend Systems
     company: Diplora
     period: Jun 2024 – Feb 2025
-    description: Developed backend systems on **AWS** for processing **high-frequency ECG time-series data** in production.
+    description: Developed backend services and APIs for high-frequency data systems in a cloud production environment, contributing to scalable and production-ready systems.
     achievements:
-      - Built **real-time streaming** data pipelines with **Apache Kafka** to collect and **buffer** high-frequency sensor data
-      - Developed **Python** and **Java** services for **event-driven** data processing using **AWS Lambda** and **S3**
-      - Migrated legacy workflows to a **cloud-native AWS architecture**, improving reliability and scalability
-      - Implemented secure **GraphQL** and **REST APIs** with a real-time **monitoring dashboard** using **React** and **Typescript**
+      - Migrated legacy workflows to a cloud-native architecture, improving system reliability, scalability, and maintainability
+      - Built real-time streaming pipelines with Apache Kafka for reliable ingestion and buffering of high-frequency data
+      - Developed Python-based platform tools and REST APIs using AWS Lambda, API Gateway, and S3
+      - Designed event-driven architectures to support scalable and efficient data workflows
 
   - title: Teaching Assistant
     role: null
     company: Leiden Institute of Advanced Computer Science
     period: Feb 2024 – Present
-    description: Delivered workshops and troubleshooting sessions, explaining technical concepts and course delivery for **Data Science**, **Software Development**, **Foundations of Computer Science** and **Advanced Programming** courses.
+    description: Supported courses in Algorithms and Data Structures, Object-Oriented Programming, Software Development, Data Science and System Security.
     achievements: []
 
 education:
   - institution: Leiden University
     degree: BSc in Computer Science - Data Science and Artificial Intelligence
     period: "Sep 2023 – Jun 2026"
-    coursework: "**Relevant Coursework**: System Design, Object-Oriented Programming, Algorithms & Data Structures, Software Security"
-    thesis: "**Thesis**: Adaptive **Data Profiling** using **AutoML model deployment** for **data quality monitoring** and **ETL pipeline optimization**"
+    coursework: "**Relevant Coursework**: System Design, Object-Oriented Programming, Algorithms & Data Structures, Distributed Systems, Software Security"
+    thesis: "**Thesis**: Adaptive data profiling for improving data quality, observability, and backend pipeline reliability"
 
 projects:
   - title: AcciBot - Vehicle Accident Detection Bot
-    description: Developed a **cloud-based backend system** for vehicle crash detection using **Arduino** and **Microsoft Azure IoT Hub**. Processed real-time sensor data using **Azure Stream Analytics** and **Azure Functions** for serverless accident and anomaly detection.
-    
+    description: Developed a cloud-based backend system and REST APIs using AWS IoT Core. Built event-driven pipelines with AWS Lambda, API Gateway, and S3 for real-time processing and alerting.
+
   - title: Weather Forecast Monitoring System
-    description: Developed an **end-to-end data pipeline** using **Python** and **Apache Airflow** to ingest weather forecasts and live observations, storing **time-series data** in **PostgreSQL** and **Snowflake** to measure forecast accuracy over time.
-    
-  - title: Explored Academic Mathematics Performance in Tehran Polytechnic University
-    description: Analyzed academic performance data using **machine learning** and **statistical analysis** to uncover trends, detect anomalies and fraud, and provide insights for academic improvement.
-    link: https://github.com/kooroshkz/math_grades_analysis
-    linkText: View on GitHub
+    description: Developed an end-to-end backend data pipeline using Python and Apache Airflow, storing time-series data in MySQL and Snowflake, focusing on data consistency and pipeline reliability.
 
 skills:
   - category: Programming Languages
-    items: SQL, Python, Java, Scala, JavaScript, Bash/Shell scripting
-    
-  - category: Software & Backend
-    items: REST APIs, GraphQL, Django, Integration and Unit Testing, Distributed Systems
-    
-  - category: Databases & Cloud
-    items: PostgreSQL, MongoDB, DynamoDB, InfluxDB, DuckDB, AWS, Azure, GCP
-    
+    items: Python, Java, JavaScript, SQL
+
+  - category: Backend & Product Development
+    items: REST APIs, FastAPI, Flask, Django, Node.js, React, Microservices, API Design, Unit & Integration Testing
+
+  - category: Cloud & Databases
+    items: AWS (Lambda, API Gateway, S3, EC2, DynamoDB), Azure (Functions, Data Lake), PostgreSQL, MySQL, MongoDB
+
   - category: Data & Streaming
-    items: Spark, Airflow, Kafka, dbt, MLOps, Databricks, Snowflake, BigQuery
-    
+    items: Kafka, Airflow, Apache Spark, Data Warehousing, ETL Pipelines
+
   - category: DevOps & Tooling
-    items: Linux (Ubuntu, CentOS), Git, Docker, Kubernetes, GitHub Actions, CI/CD
+    items: Linux, Git, Docker, Kubernetes, CI/CD, Monitoring & Observability (Grafana), Terraform
 
 certifications:
+  - Microsoft Certified Azure Developer Associate AZ-204 (Ongoing)
   - Machine Learning Specialization – Stanford Online (Aug 2023)
-  - Neural Networks and Deep Learning – DeepLearning.AI (May 2023)
   - CS50x Introduction to Computer Science – Harvard University (Dec 2022)
-  - Agile project management with Scrum – Amirkabir University of Technology (Dec 2022)
+  - Agile project management with Scrum for Engineers – Amirkabir University of Technology (Dec 2022)

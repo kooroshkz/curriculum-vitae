@@ -15,7 +15,7 @@ body {
 
 .section {
     page-break-inside: avoid;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.7em;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-weight: normal;
-    margin: 0.5em 0;
+    margin: 0.35em 0;
     color: #353436;
     display: inline;
 }
@@ -54,7 +54,19 @@ h2 {
 .section h2 {
     border-bottom: 2px solid #003366;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.section > h2 + p,
+.section > h2 + ul,
+.section > h2 + table,
+.section > h2 + div {
+    margin-top: 0.25em;
+}
+
+.section:first-of-type > h2 + p {
+    margin-top: 0.62em;
 }
 
 .highlight {
@@ -117,7 +129,24 @@ h2::first-letter {
 }
 
 .section {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.7em;
+}
+
+/* Increase separation between role blocks in Work Experience (first section). */
+.section:first-of-type > p {
+    margin-bottom: 0.35em;
+}
+
+.section:first-of-type > div[style*="padding-left"] {
+    margin-bottom: 2.4em;
+}
+
+.section:first-of-type > div[style*="padding-left"]:last-of-type {
+    margin-bottom: 0;
+}
+
+.section:first-of-type > div[style*="padding-left"] + p {
+    padding-top: 0.95em;
 }
 
 .skills-list, .languages-list, .soft-skills-list {
@@ -210,11 +239,26 @@ h2::first-letter {
     
     h2 {
         font-size: 1.3em;
-        margin: 0.8em 0 0.3em 0;
+        margin: 0.45em 0 0.2em 0;
+    }
+
+    .section h2 {
+        margin-bottom: 2px;
+    }
+
+    .section > h2 + p,
+    .section > h2 + ul,
+    .section > h2 + table,
+    .section > h2 + div {
+        margin-top: 0.1em;
+    }
+
+    .section:first-of-type > h2 + p {
+        margin-top: 0.36em;
     }
     
     .section {
-        margin-bottom: 0.8em;
+        margin-bottom: 0.35em;
         page-break-inside: avoid;
     }
     
@@ -225,6 +269,18 @@ h2::first-letter {
     
     .section div[style*="padding-left"] {
         padding-left: 1.5em !important;
+    }
+
+    .section:first-of-type > div[style*="padding-left"] {
+        margin-bottom: 1.62em;
+    }
+
+    .section:first-of-type > div[style*="padding-left"]:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .section:first-of-type > div[style*="padding-left"] + p {
+        padding-top: 0.64em;
     }
     
     .contact-details {
